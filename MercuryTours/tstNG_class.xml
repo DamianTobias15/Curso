@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Login Suite">
+ <test name="Smoke Test">
+ 	<classes>
+ 		<class name="runTestNG.RunTest" >
+ 			<methods>
+			
+				<include name="mercuryReservation" />
+				<include name="mercuryReservation2" />
+				<include name="mercuryReservation3" />
+				<exclude name="validarMenuUsuarioAdministrador" />
+				
+			</methods>
+		</class>	
+ 	</classes>
+ </test>
+
+</suite>

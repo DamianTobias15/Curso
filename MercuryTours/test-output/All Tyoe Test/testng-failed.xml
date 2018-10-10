@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Tyoe Test]">
+  <test thread-count="5" name="testngTest(failed)">
+    <groups>
+      <run>
+        <include name="Regresion"/>
+        <include name="Sanity"/>
+        <exclude name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNG.testNG2">
+        <methods>
+          <include name="registroDeNuevoUsuario"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNG.testNG2 -->
+      <class name="testNG.testNG3">
+        <methods>
+          <include name="setup"/>
+          <include name="registroDeNuevoUsuario"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNG.testNG3 -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [All Tyoe Test] -->

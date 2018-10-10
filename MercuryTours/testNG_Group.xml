@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All Tyoe Test">
+ <test name="testngTest">
+	<groups>      
+       	 <run>
+			<include name="Regresion"/>
+			<include name="Sanity"/>
+			<exclude name = "Smoke"/>
+       	 </run>
+		</groups>
+  	<classes>
+			<class name="testNG.testNG2"/> 
+			<class name="testNG.testNG3"/> 
+	</classes>
+  </test>
+</suite>
